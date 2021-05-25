@@ -78,6 +78,7 @@ def main(envs):
     while True:
         btc = api.ticker("btc_mxn")
         store.attach(btc)
+        envs['delay'] = int(envs['delay'])
         sleep(envs['delay'])
 
 

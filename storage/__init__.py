@@ -61,7 +61,7 @@ class Storage:
     def fill_params(self, params):
         """ Set the param object """
         for prm in params.split(','):
-            param = prm.split('=')
+            param = prm.split(':')
             self.params[param[0]] = param[1]
 
     def is_valid(self):
